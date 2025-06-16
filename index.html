@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop bootstrap</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" href="style.css" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+
       
         <nav class="navbar navbar-expand-lg bg-secondary justify-content-between">
             <div class="container-fluid">
-                <img src="img/logo.png" width="50" height="50" alt="logo">
+                <img src="assets/img/logo.png" width="50" height="50" alt="logo">
                 <a class="navbar-brand text-light" href="#">COMPAGNY NAME</a>
                 <a class="nav-link  text-warning"  href="#">HOME</a>
                 <a class="nav-link text-warning"  href="#">PROJECTS</a>
@@ -27,39 +27,72 @@
             </div>
         </nav>
 
-        <div class="card text">
-            <img src="img/banner-buisnessman.jpg" class="card-img" alt="banner">
-            <div class="card-img-overlay">
-                <h1 class="card-text text-light text-center">"Quality needs precision and time..."</h1>
-                <p class="card-text text-light text-center">It is our motto here at Company Name, to put our knowledge at your disposal to fulfill your vision.</p>
-                <p class="card-text text-warning text-center"><small>Company Name</small></p>
+    <div class="card text-bg-dark rounded-0 border border-0">
+
+        <!-- ici l'image -->
+        <img src="assets/img/banner-buisnessman.jpg" class="card-img rounded-0" alt="Photo d'un businessman">
+
+        <!-- ici j'ai le texte -->
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+            <div class="text-light font-weight-bold">
+                <h2 class="text-center">
+                    Quality needs precision and time...
+                </h2>
+                <p>
+                    <q class="text-center">
+                        It is our motto here at Company Name, to put our knowledge at your disposal to fulfill your vision.
+                    </q>
+                    </br>
+                    <cite class="text-warning blockquote-footer mt-5 text-end">Company Name</cite>
+                </p>                
             </div>
         </div>
+        
+    </div>
 
-
-    </header>
- 
-
-        <div class="container-fluid">
+    <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12 bg-secondary text-warning text-center m-4">
                     <p>OUR PROJECTS</p>
                 </div>
             </div>
-        </div>
+    </div>
 
-        <div class="container-fluid ">
-            <div class="row justify-content-evenly">
-               <div class="col-4 class="card style="width: 18rem;"><img src="img/architecture-1.jpg" class="rounded float-start" alt="architecture-1" width="300" height="300"></div>
-                <div class="col-4 class="card style="width: 18rem;"><img src="img/architecture-2.jpg" class="rounded mx-auto d-block" alt="architecture-2" width="300" height="300"></div>
-                <div class="col-4 class="card style="width: 18rem;"><img src="img/architecture-3.jpg" class="rounded float-end" alt="architecture-3" width="300" height="300"></div>
-            </div>  
+   
+    <div class="row justify-content-center py-5">
+        <div class="col-3">
+        <div class="card position-relative">
+        <img src="assets/img/architecture-1.jpg" class="card-img-top border border-dark border-4" style="height: 300px; object-fit: cover;">  
+        <h5 class="position-absolute text-white" style="top: 10px; left: 10px;">FAKE HOUSE</h5>
+        <div class="position-absolute d-flex px-2 py-2" style="top: 50px; left: 0; right: 0; background-color: rgba(179, 179, 179, 0.4); color: white; border-radius: 4px; max-width: 90%; margin: 0 auto;">
+        <p class="mb-0 text-align:left" style="font-size: 14px;">This house is the one you need to live a great family life, you'll need a couple of money to harmonized your stuffs. You should considere at this offer. Money don't do happiness, but it buy you a house which gave you a part of joy you are searching for.</p>
+      </div>
+      </div>
+    </div>
  
-        </div>
-               
-         
-       
-         <div class="container-fluid">
+    <div class="col-3">
+      <div class="card position-relative">
+        <img src="assets/img/architecture-2.jpg" class="card-img-top border border-dark border-4" style="height: 300px; object-fit: cover;">
+        <h5 class="position-absolute text-white" style="top: 10px; left: 10px;">FAKE HOUSE</h5>
+      <div class="position-absolute d-flex px-2 py-2" style="top: 50px; left: 0; right: 0; background-color: rgba(179, 179, 179, 0.4); color: white; border-radius: 4px; max-width: 90%; margin: 0 auto;">
+        <p class="mb-0 text-align:left" style="font-size: 14px;">This house is the one you need to live a great family life, you'll need a couple of money to harmonized your stuffs. You should considere at this offer. Money don't do happiness, but it buy you a house which gave you a part of joy you are searching for.</p>
+      </div>
+      </div>
+    </div>
+ 
+    <div class="col-3">
+      <div class="card position-relative">
+        <img src="assets/img/architecture-3.jpg" class="card-img-top border border-dark border-4" style="height: 300px; object-fit: cover;">
+        <h5 class="position-absolute text-white" style="top: 10px; left: 10px;">FAKE HOUSE</h5>
+      <div class="position-absolute d-flex px-2 py-2" style="top: 50px; left: 0; right: 0; background-color: rgba(179, 179, 179, 0.4); color: white; border-radius: 4px; max-width: 90%; margin: 0 auto;">
+        <p class="mb-0 text-align: left" style="font-size: 14px;">This house is the one you need to live a great family life, you'll need a couple of money to harmonized your stuffs. You should considere at this offer. Money don't do happiness, but it buy you a house which gave you a part of joy you are searching for.</p>
+      </div>
+      </div>
+    </div>
+    </div>
+
+ 
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12 bg-secondary text-warning text-center m-4">
                     <p>OUR COMPAGNY</p>
@@ -70,24 +103,53 @@
         
         <div class="container">
              <div class="row justify-content-between">
-                   <div class="col-2"><img src="img/worker-1-1.jpg" class="img-fluid"  alt="worker-1"></div>
-                   <p>FAKE EMPLOYEE</p>
-                   <p>This employee is not the best, not the worst but he work as much as we can't fired him, we count on him and hope he never ask for a salary increase...</p>
-                   <p><small>Join us in 2017</small></p>
-                   <div class="col-2"><img src="img/worker-1-5.jpg" class="img-fluid"  alt="worker-2"></div>
-                   <p>This employee is not the best, not the worst but he work as much as we can't fired him, we count on him and hope he never ask for a salary increase...</p>
-                   <p><small>Join us in 2013</small></p>
-                   <div class="col-2"><img src="img/worker-1-3.jpg" class="img-fluid"  alt="worker-3"></div>
-                   <p>This employee is not the best, not the worst but he work as much as we can't fired him, we count on him and hope he never ask for a salary increase...</p>
-                   <p><small>Join us in 2020</small></p>
+                   <div class="col-2"><img src="assets/img/worker-1-1.jpg" width="150" height="150" alt="worker-1"></div>
+                    <div class="col-2">
+                        <p>FAKE EMPLOYEE</p>
+                        <P>This employee is not the best, not the worst but he work as much as we can't fired him, we count on him and hope he never ask for a salary increase...</P>
+                        <p>Join us in 2017</p>
+                    </div>
+                   <div class="col-2"><img src="assets/img/worker-1-3.jpg" width="150" height="150" alt="worker-2"></div>
+                   <div class="col-2">
+                        <p>FAKE EMPLOYEE</p>
+                        <P>This employee is not the best, not the worst but he work as much as we can't fired him, we count on him and hope he never ask for a salary increase...</P>
+                        <p>Join us in 2013</p>
+                    </div>
+                   <div class="col-2"><img src="assets/img/worker-1-5.jpg" width="150" height="150" alt="worker-3"></div>
+                   <div class="col-2">
+                        <p>FAKE EMPLOYEE</p>
+                        <P>This employee is not the best, not the worst but he work as much as we can't fired him, we count on him and hope he never ask for a salary increase...</P>
+                        <p>Join us in 2020</p>
+                    </div>
             </div>
         </div>
 
         <div class="container">
-             <div class="row justify-content-evenly">
-                   <div class="col-2 m-5 align-items-left" ><img src="img/worker-2-2.jpg" class="img-fluid"  alt="worker-4"></div>
-                   <div class="col-2 m-5 align-items-left"><img src="img/worker-2-4.jpg" class="img-fluid"  alt="worker-5"></div>
-                   <div class="col-2 m-5 align-items-left"><img src="img/worker-2-6.jpg" class="img-fluid"  alt="worker-6"></div>
+             <div class="row justify-content-between">
+                   <div class="col-2 mt-5"><img src="assets/img/worker-2-2.jpg" width="150" height="150" alt="worker-4"></div>
+                   <div class="col-2 mt-5">
+                        <p>FAKE EMPLOYEE</p>
+                        <P>This employee is not the best, not the worst but he
+                        <br>work as much as we can't fired him, we count on
+                        <br> him and hope he never ask for a salary increase...</P>
+                        <p>Join us in 2019</p>
+                    </div>
+                   <div class="col-2 mt-5"><img src="assets/img/worker-2-4.jpg" width="150" height="150" alt="worker-5"></div>
+                    <div class="col-2 mt-5">
+                        <p>FAKE EMPLOYEE</p>
+                        <P>This employee is not the best, not the worst but he
+                        <br>work as much as we can't fired him, we count on
+                        <br> him and hope he never ask for a salary increase...</P>
+                        <p>Join us in 2008</p>
+                    </div>
+                   <div class="col-2 mt-5"><img src="assets/img/worker-2-6.jpg" width="150" height="150" alt="worker-6"></div>
+                    <div class="col-2 mt-5">
+                        <p>FAKE EMPLOYEE</p>
+                        <P>This employee is not the best, not the worst but he
+                        <br>work as much as we can't fired him, we count on
+                        <br> him and hope he never ask for a salary increase...</P>
+                        <p>Join us in 2016</p>
+                    </div>
             </div>
         </div>
 

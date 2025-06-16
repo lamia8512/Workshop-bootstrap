@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Dosis:wght@200..800&family=Gruppo&display=swap');
 
+*{
+    box-sizing: border-box; /*définit la façon dont la hauteur et la largeur totale est calculée*/
+    overflow-x: hidden; /*lorsque le contenu dépasse des bords*/
+}
+
 body{
     font-family: 'Dosis', sans-serif;
 }
@@ -28,3 +33,11 @@ h1, h2, h3, h4, h5, h6, em, footer p{
     background-color: #ff9800;
 }
 
+i{
+    text-align: center;
+    font-size: 60px;
+}
+
+#project img{
+    max-height: 240px;
+}
